@@ -1,4 +1,4 @@
-export default function clamp(value, lower, upper) {
+const clamp = (value, lower, upper) => {
   if (value >= lower && value <= upper) {
     return value;
   }
@@ -10,6 +10,10 @@ export default function clamp(value, lower, upper) {
     return upper;
   }
 }
+
+module.exports = {
+  clamp,
+};
 
 // Within the bounds, return as-is.
 console.log(clamp(3, 0, 5)); // => 3
