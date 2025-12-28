@@ -15,6 +15,12 @@ const linkedListValues = (head) => {
   return result;
 };
 
+//recursive version
+// const linkedListValues = (head) => {
+//   if (head === null) return [];
+//   return [head.val, ...linkedListValues(head.next)];
+// };
+
 module.exports = {
   linkedListValues,
 };
